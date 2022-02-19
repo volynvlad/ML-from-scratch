@@ -1,0 +1,1 @@
+python -m pytest test/test_knn.py
