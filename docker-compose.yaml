@@ -1,0 +1,11 @@
+version: '3'
+services:
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - dev.env
+    ports:
+      - "9001:9001"
+    command: python -m pytest test/test_knn.py test/test_linear_regression.py

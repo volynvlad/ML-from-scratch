@@ -1,1 +1,3 @@
-python -m pytest test/test_knn.py
+#! /bin/sh
+
+docker-compose build test && docker-compose run test
